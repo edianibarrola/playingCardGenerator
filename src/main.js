@@ -26,7 +26,7 @@ window.onload = function validate() {
     playingCard.style.color = "red";
   }
   outputCard = randomSuit + randomCard;
-  console.log(outputCard);
+
   sessionStorage.setItem("oldCard", outputCard);
 };
 
@@ -37,14 +37,18 @@ if (outputCard == lastCard) {
 
 let cardType = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
 
-// // // card number
-// let oldCardNum = outputCard.slice(7);
-// // // icon
-// let oldCardIcon = outputCard.slice(0, 7);
-// let miniCard = document.querySelector("#miniCard");
-// miniCard.innerHTML = `<li>${lastCard}</li>`;
 // Store
 
 // Retrieve
 let miniCard = document.getElementById("miniCard");
 miniCard.innerHTML = sessionStorage.getItem("oldCard");
+console.log(miniCard);
+let x = miniCard.innerHTML.toString();
+console.log(x);
+// let checkClub = miniCard.innerHTML.includes("&#9827;");
+// let checkSpade = miniCard.innerHTML.includes("&#9824;");
+if (x.includes("&#9829;")) {
+  miniCard.classList.add("red");
+}
+console.log(x);
+console.log(miniCard.childNodes[0].textContent);
