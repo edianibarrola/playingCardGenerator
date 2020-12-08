@@ -1,1 +1,34 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-image: url("assets/img/green_felt.jpg");
+  color: white;
+}
+.playingCard {
+  width: 30%;
+  padding-right: 2%;
+  padding-left: 2%;
+  font-size: 3rem;
+  border-radius: 5%;
+  border: 2px solid red;
+  box-shadow: 10px 10px 5px black;
+  background: lightgray;
+  height: 70vh;
+  justify-content: space-between;
+}
+.topIcon {
+  font-size: 5rem;
+}
+
+.middleNumber {
+  font-size: 7rem;
+}
+
+.bottomIcon {
+  font-size: 5rem;
+}
+.red {
+  color: red;
+}
+.black {
+  color: black;
+}
