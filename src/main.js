@@ -4,7 +4,8 @@ import "./style.css";
 
 // import "./assets/img/rigo-baby.jpg";
 // import "./assets/img/4geeks.ico";
-
+var lastCard = null;
+var outputCard = "";
 window.onload = function() {
   let suits = ["&#9829;", "&#9827;", "&#9830;", "&#9824;"];
   console.log("Edian's Crazy Card Creator");
@@ -19,13 +20,15 @@ window.onload = function() {
   middleNumber.innerHTML = randomCard;
 
   if (randomSuit === "&#9829;" || randomSuit === "&#9830;") {
-    playingCard.classList.add("red");
-    playingCard.classList.remove("black");
+    playingCard.style.color = "red";
   }
-  if (randomSuit === "&#9824;" || randomSuit === "&#9827;") {
-    playingCard.classList.add("black");
-    playingCard.classList.remove("red");
-  }
+  outputCard = randomSuit + randomCard;
+  console.log(outputCard);
 };
+
+if (outputCard == lastCard) {
+  lastCard = outputCard;
+  window.location.reload();
+}
 
 let cardType = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
