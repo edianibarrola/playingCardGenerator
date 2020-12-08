@@ -37,8 +37,12 @@ body {
   color: black;
 }
 button {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 a {
   color: white;
+}
+li {
+  list-style-type: none;
+  font-size: 2rem;
 }
