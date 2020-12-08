@@ -26,6 +26,8 @@ body {
 
 .bottomIcon {
   font-size: 5rem;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
 }
 .red {
   color: red;
