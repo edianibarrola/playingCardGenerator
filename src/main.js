@@ -47,8 +47,8 @@ let x = miniCard.innerHTML.toString();
 console.log(x);
 // let checkClub = miniCard.innerHTML.includes("&#9827;");
 // let checkSpade = miniCard.innerHTML.includes("&#9824;");
-if (x.includes("&#9829;")) {
-  miniCard.classList.add("red");
-}
-console.log(x);
-console.log(miniCard.childNodes[0].textContent);
+// if (x.includes("&#9829;")) {
+//   miniCard.classList.add("red");
+// }
+// console.log(x);
+// console.log(miniCard.childNodes[0].textContent);
